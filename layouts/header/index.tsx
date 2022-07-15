@@ -1,18 +1,19 @@
 import React, { SyntheticEvent, useRef } from "react"
 import Link from "../../components/link"
-import styles from './Header.module.scss'
 
 const Header = () => {
 
-    const navMenu = useRef(null)
+    const navMenu = useRef<HTMLDivElement>(null)
 
     const toggleMenu = (e: SyntheticEvent) => {
         e.preventDefault()
-        navMenu.current.classList.toggle("show")
+        if (navMenu.current) {
+            navMenu.current.classList.toggle("show")
+        }
     }
 
     return (
-        <header className={styles.Header}>
+        <header>
             <Link href="/">
                 <h1>Ben Brackenbury</h1>
             </Link>
