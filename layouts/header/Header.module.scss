@@ -1,0 +1,32 @@
+.Header{
+    --header-height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+
+    background-color: #dddddd;
+    height: var(--header-height);
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    nav {
+        display: flex;
+        list-style: none;
+        gap: 1em;
+        font-size: 1.8rem;
+
+        li {
+            opacity: 0.5;
+            transition: opacity 0.25s ease-in-out;
+
+            &:hover,
+            &:focus,
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}
