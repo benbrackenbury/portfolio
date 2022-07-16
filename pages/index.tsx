@@ -25,7 +25,6 @@ const Home: NextPage = () => {
           <div className="main">
             <Link className="link" href="/about">About</Link>
             <Link className="link" href="/projects">Projects</Link>
-            {/* <Link className="link" href="/projects">Blog</Link> */}
           </div>
           <div className="socials">
             <Link className="social" href="http://twitter.com/ben_brackenbury" newTab label="Twitter">

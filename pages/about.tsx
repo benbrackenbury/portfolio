@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTwitter, faGithub, faAppStore } from "@fortawesome/free-brands-svg-icons"
 import Link from '../components/link'
 import { Header } from '../layouts'
 
