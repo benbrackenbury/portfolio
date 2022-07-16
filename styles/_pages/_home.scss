@@ -1,0 +1,128 @@
+.Home {
+  width: 100vw;
+  padding: 3rem;
+  min-height: calc(100vh - var(--footer-height));
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+
+    .title-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 8rem;
+        user-select: none;
+      }
+
+      h2 {
+        font-size: 3rem;
+        opacity: 0.8;
+      }
+
+      @media screen and (max-width: 800px) {
+        h1 {
+          font-size: 6rem;
+        }
+      
+        h2 {
+          font-size: 2.25rem;
+        }
+      }
+      
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 3.6rem;
+        }
+      
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 350px) {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+
+    }
+  }
+
+  .links {
+    display: flex;
+    font-size: 2.4rem;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+  
+      @media (max-width: 500px) {
+        flex-direction: column;
+        gap: 0.5em;
+        font-size: 2rem;
+      }
+    }
+
+    .socials {
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+  
+      @media (max-width: 500px) {
+        font-size: 2rem;
+      }
+    }
+
+    .link {
+      opacity: 0.6;
+      position: relative;
+      transition: 0.2s ease-in-out;
+
+      &:hover,
+      &:focus-within {
+        opacity: 1;
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 0.1em;
+        width: 100%;
+        background-color: hsl(var(--bg-hue), var(--bg-saturation), 25%);
+        transform: scaleX(0);
+      }
+    }
+
+    .social {
+      opacity: 0.6;
+      position: relative;
+
+      &:hover,
+      &:focus-within {
+        opacity: 1;
+      }
+    }
+
+  }
+
+}

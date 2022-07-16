@@ -57,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+a.anchor {
+  transform: scale(0);
+}
+
 /* Make images easier to work with */
 img,
 picture {

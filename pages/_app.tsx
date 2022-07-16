@@ -1,12 +1,12 @@
 import '../styles/index.scss'
 import type { AppProps } from 'next/app'
-import Header from '../layouts/header'
+import { Footer } from '../layouts'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
-      <Header/>
+    <div className='app'>
       <Component {...pageProps} />
+      <Footer/>
     </div>
   )
 }

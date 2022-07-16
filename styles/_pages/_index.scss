@@ -1,0 +1,19 @@
+@forward 'home';
+@forward 'about';
+
+body {
+    background-color: hsl(var(--bg-hue), var(--bg-saturation), 90%);
+    color: hsl(var(--bg-hue), var(--bg-saturation), 25%);
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+
+    footer{
+        height: var(-footer-height);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

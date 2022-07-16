@@ -1,0 +1,38 @@
+.About {
+    min-height: calc(100vh - var(--footer-height) - var(--header-height));
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    p {
+        font-size: 2.2rem;
+        max-width: 60ch;
+    }
+
+    .qas {
+        --cols: 3;
+        display: grid;
+        grid-template-columns: repeat(var(--cols), 1fr);
+        margin: 0 auto;
+        gap: 3rem;
+
+        @media (max-width: 1200px) {
+            --cols: 2;
+        }
+
+        @media (max-width: 800px) {
+            --cols: 1;
+        }
+
+        .qa {
+            background-color: hsl(var(--bg-hue), var(--bg-saturation), 85%);
+            padding: 2rem;
+            border-radius: 10px;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
