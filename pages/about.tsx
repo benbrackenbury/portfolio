@@ -18,7 +18,7 @@ const About: NextPage = () => {
         <main className="About">
             <h1>About</h1>
             <div>
-                <p>Hi 👋, I'm Ben.</p>
+                <p>Hi 👋, I&apos;m Ben.</p>
                 <p>
                     I study Computer Science at Aberywtwyth Univeristy 
                     and I like to develop for the web and iOS/macOS.
