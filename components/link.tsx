@@ -27,7 +27,7 @@ const Link = ({
                 anchorRef.current.classList.add("active")
             }
         }
-    }, [])
+    }, [href, canBeActive])
 
     return (
         <NextLink href={href}>
