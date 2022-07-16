@@ -42,21 +42,21 @@ const About: NextPage = () => {
                         <Link href="https://marketplace.visualstudio.com/items?itemName=kkozee.theme-one-dark-vivid" newTab>
                             <em>One Dark Vivid</em>
                         </Link>
-                        &nbsp; theme with the &nbsp;
+                        {'\u00A0'} theme with the {'\u00A0'}
                         <Link href="https://github.com/tonsky/FiraCode" newTab>
                             <em>Fira Code</em>
                         </Link>
-                        &nbsp; font.
+                        {'\u00A0'} font.
                     </p>
                 </section>
                 <section className="qa">
                     <h2>Favourite language</h2>
                     <p>
-                        Out of all the language I have used,&nbsp;
+                        Out of all the language I have used,{'\u00A0'}
                         <Link href="https://www.swift.org" newTab>
                             Swift
                         </Link>
-                        &nbsp; is my favorurite.
+                        {'\u00A0'} is my favorurite.
                     </p>
                     <p>
                         I enjoy its ease of use and how flexible the language
