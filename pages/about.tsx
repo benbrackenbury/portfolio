@@ -33,7 +33,7 @@ const About: NextPage = () => {
                 </section>
                 <section className="qa">
                     <h2>Development machine</h2>
-                    <p>2021 16" MacBook Pro, currently on the macOS 13 <em>Ventura</em> beta.</p>
+                    <p>2021 16&#8221; MacBook Pro, currently on the macOS 13 <em>Ventura</em> beta.</p>
                     <p>I use <em>Xcode</em> for Apple platforms, and <em>VS Code</em> for everything else.</p>
                 </section>
                 <section className="qa">
