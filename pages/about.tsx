@@ -23,7 +23,7 @@ const About: NextPage = () => {
                 </p>
             </div>
             
-            <div className="qas">
+            {/* <div className="qas">
                 <section className="qa">
                     <h2>Platforms & languages</h2>
                     <p>For the web, I mostly use <em>Next.JS</em> & <em>TypeScript</em>, with <em>SCSS</em> for styling.</p>
@@ -62,7 +62,7 @@ const About: NextPage = () => {
                         paradigm, be that procudural, object-oriented, or declerative.
                     </p>
                 </section>
-            </div>
+            </div> */}
 
         </main>
 
