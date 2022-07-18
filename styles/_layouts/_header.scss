@@ -57,6 +57,11 @@
             display: block;
         }
 
+        .nav-wrapper {
+            gap: 0.6rem;
+            align-items: center;
+        }
+
         nav {
             flex-direction: column;
             position: absolute;
@@ -85,12 +90,8 @@
             font-size: 2rem;
         }
 
-        .nav-wrapper {
-            gap: 0.5em;
-        }
-
         .mobile-nav-btn,
-        .theme-toggle  {
+        .theme-toggle  svg {
             font-size: 2rem;
         }
     }
