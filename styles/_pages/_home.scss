@@ -18,7 +18,8 @@
         user-select: none;
       }
 
-      h2 {
+      h2,
+      .dev-message {
         font-size: 3rem;
         opacity: 0.8;
       }
@@ -28,7 +29,8 @@
           font-size: 6rem;
         }
       
-        h2 {
+        h2,
+        .dev-message {
           font-size: 2.25rem;
         }
       }
@@ -38,7 +40,8 @@
           font-size: 3.6rem;
         }
       
-        h2 {
+        h2,
+        h3 {
           font-size: 1.5rem;
         }
       }
@@ -108,7 +111,7 @@
         right: 0;
         height: 0.1em;
         width: 100%;
-        background-color: hsl(var(--bg-hue), var(--bg-saturation), 25%);
+        background-color: var(--page-foreground);
         transform: scaleX(0);
       }
     }

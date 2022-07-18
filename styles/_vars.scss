@@ -1,6 +1,57 @@
-* {
+:root {
+    /* fixed heights */
     --header-height: 64px;
-    --footer-height: 40px;
+    --footer-height: 44px;
+
+    /* mobile nav */
+    --header-opacity: 0.99;
+    --header-blur: 30px;
+}
+
+@mixin light-theme {
     --bg-hue: 210;
     --bg-saturation: 30%;
+    --page-background: hsl(var(--bg-hue), var(--bg-saturation), 90%);
+    --page-foreground: hsl(var(--bg-hue), var(--bg-saturation), 25%);
+    --card-background: hsl(var(--bg-hue), var(--bg-saturation), 85%);
+    --card-badge-background: hsl(var(--bg-hue), var(--bg-saturation), 80%);
+    --header-background: hsla(var(--bg-hue), var(--bg-saturation), 90%, var(--header-opacity));
+
+    @supports (backdrop-filter: blur(10px)) {
+        --header-opacity: 0.6;
+    }
+}
+
+@mixin dark-theme {
+    --bg-hue: 210;
+    --bg-saturation: 30%;
+    --page-background: hsl(var(--bg-hue), var(--bg-saturation), 10%);
+    --page-foreground: hsl(var(--bg-hue), var(--bg-saturation), 85%);
+    --card-background: hsl(var(--bg-hue), var(--bg-saturation), 15%);
+    --card-badge-background: hsl(var(--bg-hue), var(--bg-saturation), 25%);
+    --header-background: hsla(var(--bg-hue), var(--bg-saturation), 10%, var(--header-opacity));
+
+    @supports (backdrop-filter: blur(10px)) {
+        --header-opacity: 0.8;
+    }
+}
+
+
+// Theme
+/* automatic/manual light mode */
+:root,
+:root.light {
+    @include light-theme();
+}
+
+/* automatic dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include dark-theme();
+    }
+}
+
+/* manual dark mode */
+:root.dark {
+    @include dark-theme();
 }

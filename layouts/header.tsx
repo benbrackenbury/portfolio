@@ -1,4 +1,5 @@
 import Link from '../components/link'
+import Nav from '../components/nav'
 
 const Header: React.FC = () => {
   return (
@@ -7,20 +8,8 @@ const Header: React.FC = () => {
           <h1>Ben Brackenbury</h1>
         </Link>
 
-        <nav>
-          <li>
-            <Link className="link" href="/" canBeActive>Home</Link>
-          </li>
-          <li>
-            <Link className="link active" href="/about" canBeActive>About</Link>
-          </li>
-          <li>
-            <Link className="link" href="/projects" canBeActive>Projects</Link>
-          </li>
-          {/* <li>
-            <Link className="link" href="/blog" canBeActive>Blog</Link>
-          </li> */}
-        </nav>
+        <Nav/>
+
     </header>
   )
 }

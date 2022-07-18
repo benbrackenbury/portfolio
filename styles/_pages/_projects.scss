@@ -1,16 +1,11 @@
-.About {
+.Projects {
     min-height: calc(100vh - var(--footer-height) - var(--header-height));
     padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 
-    p {
-        font-size: 2.2rem;
-        max-width: 60ch;
-    }
-
-    .qas {
+    .project-grid {
         --cols: 3;
         display: grid;
         grid-template-columns: repeat(var(--cols), 1fr);
@@ -23,16 +18,6 @@
 
         @media (max-width: 800px) {
             --cols: 1;
-        }
-
-        .qa {
-            background-color: var(--card-background);
-            padding: 2rem;
-            border-radius: 10px;
-
-            a {
-                text-decoration: underline;
-            }
         }
     }
 }

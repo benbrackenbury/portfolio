@@ -1,0 +1,16 @@
+footer {
+    height: var(-footer-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+
+    :not(.copyright) {
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

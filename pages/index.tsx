@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter, faGithub, faAppStore } from "@fortawesome/free-brands-svg-icons"
 import Link from '../components/link'
+import ThemeToggle from '../components/theme-toggle'
 
 const Home: NextPage = () => {
 
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
               <h1>Ben Brackenbury</h1>
             </Link>
             <h2>iOS & Web development</h2>
+            <h3 className='dev-message'>This site is in development</h3>
           </div>
         </header>
 
@@ -25,6 +27,7 @@ const Home: NextPage = () => {
           <div className="main">
             <Link className="link" href="/about">About</Link>
             <Link className="link" href="/projects">Projects</Link>
+            <Link className="link" href="/blog">Blog</Link>
           </div>
           <div className="socials">
             <Link className="social" href="http://twitter.com/ben_brackenbury" newTab label="Twitter">

@@ -1,0 +1,105 @@
+.project-card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .title-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .community-stats {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            max-width: 100%;
+
+            .stars-info {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .description {
+        font-size: 2.2rem;
+        max-width: 60ch;
+    }
+
+    .spacer {
+        flex-grow: 1;
+        min-height: 1em;
+    }
+
+    .languages {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .lang-badge {
+            background-color: var(--card-badge-background);
+            padding: 0.5em 1em;
+            border-radius: 12px;
+            line-height: normal;
+            font-size: 1.4rem;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.project-card[is-skeleton="true"] {
+
+    @keyframes skeleton {
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    
+    p,
+    h2,
+    .lang-badge {
+        --base-color: var(--page-background);
+        --highlight-color: var(--card-badge-background);
+    
+        background-color: var(--base-color);
+        color: transparent;
+        width: 100%;
+        border-radius: 0.25rem;
+        display: inline-flex;
+        line-height: 1;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(
+                90deg,
+                var(--base-color),
+                var(--highlight-color),
+                var(--base-color)
+            );
+            transform: translateX(-100%);
+
+            animation: skeleton 1s ease-in-out infinite;
+        }
+    }
+
+    * {
+        text-decoration: none;
+    }
+}
