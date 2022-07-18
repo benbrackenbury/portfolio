@@ -15,6 +15,11 @@
     @include header-background();
     isolation: isolate;
 
+    .nav-wrapper {
+        display: flex;
+        gap: 1em;
+    }
+
     nav {
         list-style: none;
         display: flex;
@@ -37,6 +42,10 @@
 
     .mobile-nav-btn {
         display: none;
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        font-size: 2.4rem;
     }
 
     @media (max-width: 720px) {
@@ -66,6 +75,23 @@
 
         nav.show {
             transform: scaleY(1);
+        }
+    }
+
+    @media (max-width: 380px) {
+        padding: 0 2rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .nav-wrapper {
+            gap: 0.5em;
+        }
+
+        .mobile-nav-btn,
+        .theme-toggle  {
+            font-size: 2rem;
         }
     }
 }

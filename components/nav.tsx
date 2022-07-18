@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router'
 import { useEffect, useRef, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Link from '../components/link'
 import {getCurrentPageSelector} from '../util'
 import ThemeToggle from './theme-toggle'
@@ -45,7 +47,7 @@ const Nav: React.FC = () => {
   }
 
   return (
-    <>
+    <div className="nav-wrapper">
         <nav ref={navRef}>
             <li>
                 <Link className="link" href="/" canBeActive>Home</Link>
@@ -59,16 +61,14 @@ const Nav: React.FC = () => {
             <li>
                 <Link className="link" href="/blog" canBeActive>Blog</Link>
             </li>
-            
-            <li>
-              <ThemeToggle/>
-            </li>
         </nav>
 
+        <ThemeToggle/>
+
         <button className="mobile-nav-btn" onClick={toggleMobileNav}>
-          Menu
+          <FontAwesomeIcon icon={faBars} />
         </button>
-    </>
+    </div>
   )
 }
 
