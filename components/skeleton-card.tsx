@@ -10,7 +10,7 @@ const SkeletonCard = () => {
 
         <ul className="list">
           {Array(20)
-            .fill()
+            .fill(null)
             .map((item, index) => (
               <li className="card" key={index}>
                 <Skeleton height={180} />
