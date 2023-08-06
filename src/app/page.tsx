@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
   return (
-    <main className="grid place-items-center w-[100dvw] h-[100dvh]">
-      <div className="flex flex-col justify-center align-middle text-center gap-4">
-        <h1 className="text-6xl font-bold">Ben Brackenbury</h1>
+    <main className="grid place-items-center w-[100dvw] h-[100dvh] px-6">
+      <div className="flex flex-col justify-center align-middle text-center gap-4 w-full">
+        <h1 className="text-5xl sm:text-6xl font-bold">Ben Brackenbury</h1>
         <p className="text-2xl">Web & iOS Developer</p>
 
         <div className="flex flex-row justify-center gap-7 text-4xl my-5 select-none mb-20">
