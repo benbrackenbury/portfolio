@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
     --background-color: #f5f5f5;
     --foreground-color: #222222;
     --accent-color: #FF4F00;
@@ -32,4 +32,4 @@ a:focus,
 a:active,
 a:focus-visible {
     color: var(--accent-color);
-}
+} */
