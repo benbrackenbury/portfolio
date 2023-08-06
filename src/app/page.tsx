@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
   return (
-    <main className="grid place-items-center w-screen h-screen">
+    <main className="grid place-items-center w-[100dvw] h-[100dvh]">
       <div className="flex flex-col justify-center align-middle text-center gap-4">
         <h1 className="text-6xl font-bold">Ben Brackenbury</h1>
         <p className="text-2xl">Web & iOS Developer</p>
