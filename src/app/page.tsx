@@ -14,9 +14,6 @@ export default function Home() {
           <SocialLink href='https://linkedin.com/in/benbrackenbury' label='LinkedIn' icon={faLinkedinIn} / >
           <SocialLink href='https://apps.apple.com/bt/developer/ben-brackenbury/id1518789219' label='App Store' icon={faAppStore} / >
         </div>
-
-        <p><em>Website under development—more coming soon...</em></p>
- 
       </div>
     </main>
   )
