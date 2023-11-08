@@ -18,8 +18,8 @@ export default async function GitHubProjects() {
   const projects = await getProjects()
   return (
     <ul className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-      {projects.map((project: GitHubProject) => (
-        <ProjectCard project={project} />
+      {projects.map((project: GitHubProject, index: number) => (
+        <ProjectCard project={project} key={index} />
       ))}
     </ul>
   )
