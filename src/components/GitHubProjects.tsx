@@ -31,18 +31,20 @@ type ProjectCardProps = {
 function ProjectCard(props: ProjectCardProps) {
   const { project } = props
   return (
-    <Link
-      href={project.html_url}
-      target="_blank"
-      className="bg-secondaryBackground dark:bg-secondaryBackgroundDark flex h-48 flex-col justify-between gap-2 rounded-md p-4 hover:brightness-110"
-    >
-      <div className="flex flex-col gap-2">
-        <h3 className="text-2xl font-semibold">{project.name}</h3>
-        <p className="max-w-prose opacity-70">{project.description}</p>
-      </div>
-      <p className="max-w-prose text-sm font-light opacity-50">
-        {project.language}
-      </p>
-    </Link>
+    <li>
+      <Link
+        href={project.html_url}
+        target="_blank"
+        className="flex h-48 flex-col justify-between gap-2 rounded-md bg-secondaryBackground p-4 hover:brightness-110 dark:bg-secondaryBackgroundDark"
+      >
+        <div className="flex flex-col gap-2">
+          <h3 className="text-2xl font-semibold">{project.name}</h3>
+          <p className="max-w-prose opacity-70">{project.description}</p>
+        </div>
+        <p className="max-w-prose text-sm font-light opacity-50">
+          {project.language}
+        </p>
+      </Link>
+    </li>
   )
 }
