@@ -10,7 +10,11 @@ export default function Arrow() {
     if (!arrow) return
 
     window.addEventListener('scroll', () => {
-      //
+      if (window.scrollY / window.innerHeight > 0.2) {
+        arrow.classList.add('opacity-0')
+      } else {
+        arrow.classList.remove('opacity-0')
+      }
     })
 
     return () => arrow.removeEventListener('scroll', () => {})
@@ -26,7 +30,7 @@ export default function Arrow() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="mx-auto h-12 scale-y-110 animate-bounce opacity-50"
+      className="mx-auto h-12 scale-y-110 animate-bounce opacity-50 transition-opacity duration-1000"
     >
       <line x1="12" y1="5" x2="12" y2="19"></line>
       <polyline points="19 12 12 19 5 12"></polyline>

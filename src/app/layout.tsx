@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Footer from '@/components/Footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,13 +20,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`
+    <html
+      lang="en"
+      className={`
       ${inter.className}
+      max-w-[100dvw] overflow-x-hidden
       bg-background text-foreground
       dark:bg-backgroundDark dark:text-foregroundDark
-      max-w-[100dvw] overflow-x-hidden
-    `}>
-      <body>{children}</body>
+    `}
+    >
+      <body>
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }
