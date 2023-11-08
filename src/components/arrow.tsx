@@ -1,9 +1,9 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 
-export default function arrow() {
-  const arrowRef = useRef<SVGSVGElement>(null)
+export default function Arrow() {
+  const arrowRef = React.useRef<SVGSVGElement>(null)
 
   useEffect(() => {
     const arrow = arrowRef.current
