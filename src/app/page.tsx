@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Home() {
   return (
     <>
-      <section className="grid h-[90dvh] w-[100dvw] place-items-center px-6">
+      <section className="grid h-[90svh] w-[100dvw] place-items-center px-6">
         <div className="flex w-full flex-col justify-center gap-4 text-center align-middle">
           <h1 className="text-5xl font-bold sm:text-6xl">Ben Brackenbury</h1>
           <p className="text-2xl">Web & iOS Developer</p>
@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       <article className="mb-20 flex flex-col gap-6 p-4 sm:px-8">
-        <h2 className="text-4xl font-semibold">Projects</h2>
+        <h2 className="text-3xl font-semibold sm:text-4xl">Projects</h2>
         <GitHubProjects />
       </article>
     </>
