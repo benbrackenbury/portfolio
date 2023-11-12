@@ -1,13 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Footer from '@/components/Footer'
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: 'Ben Brackenbury',
@@ -23,7 +18,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`
-      ${inter.className}
+      ${GeistSans.className}
       max-w-[100dvw] overflow-x-hidden
       bg-background text-foreground
       dark:bg-backgroundDark dark:text-foregroundDark
