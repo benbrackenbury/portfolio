@@ -42,9 +42,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Arrow />
-
-      <article className="my-20 flex flex-col gap-6 p-4 sm:px-8">
+      <article className="mb-20 flex flex-col gap-6 p-4 sm:px-8">
         <h2 className="text-4xl font-semibold">Projects</h2>
         <GitHubProjects />
       </article>
