@@ -1,3 +1,5 @@
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,11 +8,13 @@ type GitHubProject = {
   description: string
   language: string
   html_url: string
+  stargazers_count: number
 }
 
 async function getProjects() {
   const res = await fetch('https://api.github.com/users/benbrackenbury/repos')
   const data = (await res.json()) as GitHubProject[]
+  data.sort((a, b) => b.stargazers_count - a.stargazers_count)
   return data
 }
 
@@ -28,7 +32,7 @@ export default async function GitHubProjects() {
           target="_blank"
           className="grid place-content-center rounded-md bg-secondaryBackground p-4 text-center align-middle brightness-[99%] hover:brightness-90 dark:bg-secondaryBackgroundDark dark:brightness-125 dark:hover:brightness-150 sm:h-48"
         >
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <h3 className="text-xl font-semibold sm:text-2xl">More</h3>
             <p className="max-w-prose opacity-70">See more projects</p>
           </div>
@@ -55,9 +59,15 @@ function ProjectCard(props: ProjectCardProps) {
           <h3 className="text-xl font-semibold sm:text-2xl">{project.name}</h3>
           <p className="max-w-prose opacity-70">{project.description}</p>
         </div>
-        <p className="max-w-prose text-sm font-light opacity-50">
-          {project.language}
-        </p>
+        <div className="flex items-center gap-6">
+          <p className="max-w-prose font-light opacity-70">
+            <FontAwesomeIcon icon={faStar} className="mr-2 opacity-50" />
+            {project.stargazers_count}
+          </p>
+          <p className="max-w-prose text-sm font-light opacity-50">
+            {project.language}
+          </p>
+        </div>
       </Link>
     </li>
   )
