@@ -7,6 +7,7 @@ import {
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Tweet } from 'react-tweet'
 
 export default function Home() {
   return (
@@ -45,6 +46,13 @@ export default function Home() {
       <article className="mb-20 flex flex-col gap-6 p-4 sm:px-8">
         <h2 className="text-3xl font-semibold sm:text-4xl">Projects</h2>
         <GitHubProjects />
+        <section className="pt-6">
+          <h3 className="text-lg font-semibold sm:text-xl">iOS Projects</h3>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <Tweet id="1646116563924164609" />
+            <Tweet id="1650412863272484866" />
+          </div>
+        </section>
       </article>
     </>
   )
