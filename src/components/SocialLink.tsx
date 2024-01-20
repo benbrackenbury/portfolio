@@ -32,7 +32,7 @@ type SocialLinkExtensionProps = {
   username: string
 }
 
-SocialLink.X = function (props: SocialLinkExtensionProps) {
+SocialLink.X = function XSocialLink(props: SocialLinkExtensionProps) {
   const { username } = props
   const href = `https://x.com/${username}`
 
@@ -43,7 +43,7 @@ SocialLink.X = function (props: SocialLinkExtensionProps) {
   )
 }
 
-SocialLink.GitHub = function (props: SocialLinkExtensionProps) {
+SocialLink.GitHub = function GitHubSocialLink(props: SocialLinkExtensionProps) {
   const { username } = props
   const href = `https://github.com/${username}`
 
@@ -54,7 +54,9 @@ SocialLink.GitHub = function (props: SocialLinkExtensionProps) {
   )
 }
 
-SocialLink.LinkedIn = function (props: SocialLinkExtensionProps) {
+SocialLink.LinkedIn = function LinkedInSocialLink(
+  props: SocialLinkExtensionProps,
+) {
   const { username } = props
   const href = `https://linkedin.com/in/${username}`
 
@@ -65,7 +67,9 @@ SocialLink.LinkedIn = function (props: SocialLinkExtensionProps) {
   )
 }
 
-SocialLink.AppStore = function (props: SocialLinkExtensionProps) {
+SocialLink.AppStore = function AppStoreSocialLink(
+  props: SocialLinkExtensionProps,
+) {
   const { username } = props
   const href = `https://apps.apple.com/bt/developer/${username}`
 
