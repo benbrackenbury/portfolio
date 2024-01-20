@@ -18,27 +18,10 @@ export default function Home() {
           <p className="text-2xl">Web & iOS Developer</p>
 
           <div className="my-5 mb-20 flex select-none flex-row justify-center gap-7 text-4xl">
-            <SocialLink
-              href="https://x.com/ben_brackenbury"
-              label="X (Twitter)"
-            >
-              𝕏
-            </SocialLink>
-            <SocialLink href="https://github.com/benbrackenbury" label="GitHub">
-              <FontAwesomeIcon icon={faGithub} />
-            </SocialLink>
-            <SocialLink
-              href="https://linkedin.com/in/benbrackenbury"
-              label="LinkedIn"
-            >
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </SocialLink>
-            <SocialLink
-              href="https://apps.apple.com/bt/developer/ben-brackenbury/id1518789219"
-              label="App Store"
-            >
-              <FontAwesomeIcon icon={faAppStore} />
-            </SocialLink>
+            <SocialLink.X username="benbrackenbury" />
+            <SocialLink.GitHub username="benbrackenbury" />
+            <SocialLink.LinkedIn username="benbrackenbury" />
+            <SocialLink.AppStore username="ben-brackenbury/id1518789219" />
           </div>
         </div>
       </section>
