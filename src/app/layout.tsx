@@ -1,8 +1,8 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import '@fortawesome/fontawesome-svg-core/styles.css'
 import Footer from '@/components/Footer'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { GeistSans } from 'geist/font/sans'
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Ben Brackenbury',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang='en'
       className={`
       ${GeistSans.className}
       max-w-[100dvw] overflow-x-hidden
@@ -25,7 +25,7 @@ export default function RootLayout({
     `}
     >
       <body>
-        <main>{children}</main>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
