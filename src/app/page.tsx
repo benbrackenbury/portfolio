@@ -1,6 +1,6 @@
 import ProjectCard from '@/components/project-card'
 import SocialLink from '@/components/social-link'
-import { AppStoreIcon, GitHubIcon, LinkedInIcon } from '@/lib/icons'
+import { AppStoreIcon, GitHubIcon } from '@/lib/icons'
 
 export default function Home() {
   return (
@@ -32,13 +32,6 @@ function HeroSection() {
             title='GitHub'
           >
             <GitHubIcon />
-          </SocialLink>
-          <SocialLink
-            href='https://linkedin.com/in/benbrackenbury'
-            ariaLabel='LinkedIn'
-            title='LinkedIn'
-          >
-            <LinkedInIcon />
           </SocialLink>
           <SocialLink
             href='https://apps.apple.com/bt/developer/ben-brackenbury/id1518789219'
