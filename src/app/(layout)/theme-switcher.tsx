@@ -47,6 +47,8 @@ export default function ThemeSwitcher() {
   return (
     <motion.button
       {...motionProps}
+      //@ts-ignore
+      suppressHydrationWarning
       type='button'
       onClick={toggleTheme}
       aria-label='Toggle theme'
