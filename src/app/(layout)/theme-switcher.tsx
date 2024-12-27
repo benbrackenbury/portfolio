@@ -1,9 +1,10 @@
-'use client'
-
+'use client';
 import { MoonIcon, SunIcon, ThemeIcon } from '@/lib/icons'
 import { MotionProps, motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { toast } from 'sonner'
+
+import type { JSX } from "react";
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme()
