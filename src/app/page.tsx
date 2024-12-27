@@ -13,9 +13,9 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <section className='flex min-h-[80svh] items-center justify-center'>
+    <section className='jkfhjkdfghjkfdhj'>
       <div className='flex flex-col gap-10 text-center'>
-        <h1 className='text-center font-serif text-7xl font-semibold'>
+        <h1 className='text-center text-7xl font-semibold'>
           Web &amp; iOS Developer
         </h1>
         <div className='flex items-center justify-center gap-12 text-5xl'>
@@ -56,7 +56,7 @@ function HeroSection() {
 function ProjectsSection() {
   return (
     <section className='flex flex-col gap-12'>
-      <h2 className='font-serif text-4xl font-semibold'>Projects</h2>
+      <h2 className='text-4xl font-semibold'>Projects</h2>
       <div className='grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3'>
         {Array.from({ length: 5 }).map((_, index) => (
           <ProjectCard

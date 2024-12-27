@@ -8,7 +8,6 @@ export default function Header() {
         <HeaderTitle>
           <span className='text-3xl'>Ben Brackenbury</span>
         </HeaderTitle>
-        <span className='text-xl opacity-80'>(New)</span>
       </section>
       <section className='flex items-center gap-4'>
         <ThemeSwitcher />
