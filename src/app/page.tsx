@@ -41,7 +41,7 @@ export default async function Home() {
           title='I use Neovim btw'
           width={400}
           height={400}
-          className='mx-auto aspect-square h-[30vw] max-h-[20rem] w-[30vw] max-w-[20rem] place-self-center rounded-full object-cover transition-all duration-1000 sm:h-[25vw] sm:w-[25vw] md:h-[20vw] md:w-[20vw] 2xl:h-[30vw] 2xl:w-[30vw] starting:scale-70 starting:opacity-60'
+          className='starting:rotate-5 rotate-0 mx-auto aspect-square h-[30vw] max-h-[20rem] w-[30vw] max-w-[20rem] place-self-center rounded-full object-cover transition-all duration-1000 sm:h-[25vw] sm:w-[25vw] md:h-[20vw] md:w-[20vw] 2xl:h-[30vw] 2xl:w-[30vw] starting:scale-70 starting:opacity-60'
         />
       </section>
 
