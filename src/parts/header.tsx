@@ -10,16 +10,12 @@ export default function Header() {
         </HeaderTitleLink>
         <nav className='flex items-center space-x-4'>
           <Link
-            href='/'
+            href='https://github.com/benbrackenbury'
+            target='_blank'
+            rel='noopener noreferrer'
             className='text-lg opacity-50 transition-all duration-300 hover:opacity-100 sm:text-2xl'
           >
-            About
-          </Link>
-          <Link
-            href='/'
-            className='text-lg opacity-50 transition-all duration-300 hover:opacity-100 sm:text-2xl'
-          >
-            Projects
+            GitHub
           </Link>
         </nav>
       </header>
