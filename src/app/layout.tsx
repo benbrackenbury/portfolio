@@ -1,3 +1,4 @@
+import GitHubBanner from '@/components/github-banner'
 import Header from '@/parts/header'
 import '@/style/index.css'
 import type { Metadata } from 'next'
@@ -30,6 +31,7 @@ export default function RootLayout(props: PropsWithChildren) {
           starting:opacity-0 opacity-100 duration-1000 transition-opacity
           '>
           {props.children}
+        <GitHubBanner />
         </main>
       </body>
     </html>

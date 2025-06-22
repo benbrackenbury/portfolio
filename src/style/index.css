@@ -4,8 +4,8 @@
 @theme {
   --color-background: #eee;
   --color-foreground: #111;
-
   --text-json: clamp(0.875rem, 0.5rem + 1.5vw, 1.5rem);
+  --ease-in-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 :root {
