@@ -17,6 +17,14 @@ export default function Header() {
           >
             GitHub
           </Link>
+          <Link
+            href='https://apps.apple.com/us/developer/ben-brackenbury/id1518789219'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-lg opacity-50 transition-all duration-300 hover:opacity-100 sm:text-2xl'
+          >
+            App Store
+          </Link>
         </nav>
       </header>
     </div>

@@ -20,7 +20,8 @@ export default async function Home() {
     ],
     "links": [
         <a title='X (formerly Twitter)' href="https://x.com/ben_brackenbury" target="_blank" rel="noopener noreferrer">𝕏</a>,
-        <a href="https://github.com/benbrackenbury" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/benbrackenbury" target="_blank" rel="noopener noreferrer">GitHub</a>,
+        <a href="https://apps.apple.com/us/developer/ben-brackenbury/id1518789219" target="_blank" rel="noopener noreferrer">App Store</a>
     ]
 }
   `
@@ -38,7 +39,7 @@ export default async function Home() {
         <Image
           src='https://avatars.githubusercontent.com/u/13574556?v=4'
           alt='Ben Brackenbury'
-          title='I use Neovim btw'
+          title='Hello'
           width={400}
           height={400}
           className='starting:rotate-5 rotate-0 mx-auto aspect-square h-[30vw] max-h-[20rem] w-[30vw] max-w-[20rem] place-self-center rounded-full object-cover transition-all duration-1000 sm:h-[25vw] sm:w-[25vw] md:h-[20vw] md:w-[20vw] 2xl:h-[30vw] 2xl:w-[30vw] starting:scale-70 starting:opacity-60'

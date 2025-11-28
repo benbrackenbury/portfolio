@@ -18,6 +18,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Ben Brackenbury',
   description: 'Web and iOS Developer in the United Kingdom',
+  appleWebApp: {
+    title: 'Ben Brackenbury',
+  }
 }
 
 export default function RootLayout(props: PropsWithChildren) {
