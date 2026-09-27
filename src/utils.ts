@@ -24,7 +24,7 @@ export const getPostBySlug = async (slug: string) => {
 
 export const getPostsMetaData = async () => {
   const files = fs.readdirSync(rootDir)
-  let posts = []
+  const posts = []
   for (const fileName of files) {
     if (fileName === 'layout.tsx') continue
     const { meta } = await getPostBySlug(fileName)

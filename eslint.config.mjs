@@ -14,7 +14,6 @@ export default [...next, ...nextCoreWebVitals, ...nextTypescript, {
   plugins: {
     '@typescript-eslint': typescriptEslintPlugin,
     'unused-imports': unusedImportsPlugin,
-    '@next/next': nextPlugin,
   },
   rules: {
     ...nextPlugin.configs['core-web-vitals'].rules,
