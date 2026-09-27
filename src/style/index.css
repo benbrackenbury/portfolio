@@ -2,32 +2,22 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-background: #eee;
-  --color-foreground: #111;
-  --text-json: clamp(0.875rem, 0.5rem + 1.5vw, 1.5rem);
+  --color-background: #f4f1ea;
+  --color-foreground: #141414;
+  --color-accent: #ff4f1f;
   --ease-in-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 :root {
   @media (prefers-color-scheme: dark) {
-    --color-background: #191919;
-    --color-foreground: #eee;
+    --color-background: #111110;
+    --color-foreground: #ece8df;
   }
 }
 
 @layer base {
-  pre a {
-    @apply opacity-70 transition-all duration-300 hover:opacity-100;
-  }
-
-  @media (max-width: 80rem) {
-    .overlap-col {
-      flex-direction: column !important;
-      gap: 1.5rem !important;
-    }
-    .overlap-col > pre {
-      order: 2 !important; /* pre below image */
-    }
+  ::selection {
+    @apply bg-accent text-background;
   }
 
   .blog-post hr,

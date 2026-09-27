@@ -6,7 +6,7 @@ import { Geist, JetBrains_Mono } from 'next/font/google'
 import { PropsWithChildren } from 'react'
 
 const geistSans = Geist({
-  variable: '--font-geist-sans',
+  variable: '--font-sans',
   subsets: ['latin'],
 })
 
@@ -27,14 +27,12 @@ export default function RootLayout(props: PropsWithChildren) {
   return (
     <html lang='en' className='bg-background text-foreground'>
       <body
-        className={`${geistSans.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${geistSans.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
         <Header />
-        <main className='px-4 mx-auto max-w-7xl pt-[16vh] pb-12 sm:pt-[10vh]
-          starting:opacity-0 opacity-100 duration-1000 transition-opacity
-          '>
+        <main className='mx-auto max-w-6xl px-6 pb-12 opacity-100 transition-opacity duration-1000 starting:opacity-0'>
           {props.children}
-        <GitHubBanner />
+          <GitHubBanner />
         </main>
       </body>
     </html>
